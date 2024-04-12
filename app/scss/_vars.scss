@@ -1,0 +1,20 @@
+$default-color: #757575;
+$title-color: #212121;
+$bg-color: #fff;
+$accent-color: #EC3C05;
+$border-color: #ECECEC;
+
+%rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-700 {
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%roboto-400 {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+}

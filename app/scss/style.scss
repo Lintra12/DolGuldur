@@ -3,5 +3,92 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 22px 0;
+  border-bottom: 1px solid $border-color;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 50px;
+  }
+
+  &__link {
+    font-size: 16px;
+    padding-bottom: 24px;
+    color: $title-color;
+    transition: color 0.3s, border-bottom 0.3s;
+
+    &:hover {
+      color: $accent-color;
+      border-bottom: 4px solid $accent-color;
+      border-radius: 2px;
+    }
+  }
+
+  &__link--current {
+    border-bottom: 4px solid $accent-color;
+    border-radius: 2px;
+  }
+}
+
+.logo {
+  padding-right: 90px;
+}
+
+.contact__data {
+  display: flex;
+  align-items: center;
+}
+
+.contact__details:first-child {
+  padding-right: 45px;
+}
+
+.contact__details::before {
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.contact__details--mail::before {
+  background-image: url(../images/icons/envelope.svg);
+}
+
+.contact__details--phone::before {
+  background-image: url(../images/icons/smartphone.svg);
+}
+
+.contact__link {
+  transition: color 0.3s;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+
+
+
+
+
+
 
 @import 'media';
