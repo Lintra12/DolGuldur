@@ -1,25 +1,11 @@
-$default-color: #757575;
-$title-color: #212121;
-$bg-color: #fff;
-$accent-color: #EC3C05;
-$border-color: #ECECEC;
-$hd-black: #000;
-$apps-color: rgba(47, 48, 58, 0.6);
-$team-color: #F5F4FA;
-$shadow-color: rgba(0, 0, 0, 0.3);
-$text-color: #F29040;
+$default: #757575;
+$title: #212121;
+$background: #fff;
+$accent: #EC3C05;
+$border: #ECECEC;
+$header: #000;
+$apps: rgba(47, 48, 58, 0.6);
+$team: #F5F4FA;
+$shadow: rgba($header, 0.3);
+$text-marker: #F29040;
 
-%rubik-400 {
-  font-family: 'Rubik-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%rubik-700 {
-  font-family: 'Rubik-Bold', sans-serif;
-  font-weight: 700;
-}
-
-%roboto-400 {
-  font-family: 'Roboto-Regular', sans-serif;
-  font-weight: 400;
-}

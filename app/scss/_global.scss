@@ -1,9 +1,10 @@
 body {
-  @extend %rubik-400;
-  color: $default-color;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: $default;
   font-size: 14px;
   line-height: 1.7;
-  background-color: $bg-color;
+  background-color: $background;
 }
 
 .section {
@@ -20,9 +21,10 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
-  color: $bg-color;
-  background-color: $accent-color;
+  color: $background;
+  background-color: $accent;
   padding: 10px 50px;
+  border-radius: 4px;
 }
 
 .visually-hidden {
@@ -41,8 +43,12 @@ body {
 .title {
   font-size: 36px;
   font-weight: 400;
-  color: $title-color;
+  color: $title;
   display: block;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.logo {
+  display: block;
 }
