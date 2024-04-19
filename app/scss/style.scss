@@ -25,7 +25,7 @@
   }
 
   &__item:not(:last-child) {
-    padding-right: 50px;
+    margin-right: 50px;
   }
 
   &__link {
@@ -50,41 +50,40 @@
 
 .contact {
   display: flex;
-  align-items: center;
 
   &__item {
     position: relative;
 
     &:first-child {
       margin-right: 45px;
-    }   
+    }
   }
-  
+
   &__link {
     display: flex;
     align-items: center;
     transition: color 0.3s;
-    
+
     &::before {
       content: '';
       display: block;
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain;
+      background-size: center;
       width: 16px;
       height: 16px;
       margin-right: 10px;
     }
-    
+
     &--mail {
-      
+
       &::before {
         background-image: url('../images/icons/envelope.svg');
       }
     }
-    
+
     &--phone {
-      
+
       &::before {
         background-image: url('../images/icons/smartphone.svg');
       }
@@ -92,6 +91,10 @@
 
     &:hover {
       color: $accent;
+    }
+        
+    &--color {
+      color: $text-marker;
     }
   }
 }
@@ -155,22 +158,23 @@
     position: relative;
 
     &:not(:last-child) {
-        margin-right: 30px;
-      }
+      margin-right: 30px;
     }
-    
-    &__name {
-      position: absolute;
-      color: $background;
-      font-size: 16px;
-      text-transform: uppercase;
-      text-align: center;
-      background-color: $apps;
-      padding: 25px 120px;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-    }
+  }
+
+  &__name {
+    position: absolute;
+    color: $background;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $apps;
+    padding: 22px 120px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .team {
@@ -186,10 +190,23 @@
   &__item {
     position: relative;
     width: 270px;
+    z-index: 1;
+    box-shadow: 2px 3px 3px 0 $shadow;
+    border-radius: 4px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      display: block;
+      background-color: $background;
+      width: 270px;
+      height: 368px;
+    }
   }
 
   &__img {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   &__name {
@@ -199,15 +216,27 @@
 
   &__position {
     font-size: 16px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
 .footer {
   background-color: $header;
   padding: 60px 0;
+
+  &__contact {
+    display: inline-block;
+  }
+
+  &__logo {
+    margin-bottom: 23px;
+  }
 }
 
-.contact__link--color {
-  color: $text-marker;
+.contact {
+
+  &__item--footer {
+    margin-bottom: 9px;
+    font-style: regular;
+  }
 }
