@@ -25,6 +25,7 @@
     color: $title;
     background-color: $team;
     padding: 11px 26px;
+    border-radius: 4px;
   }
 
   &__content {
@@ -66,4 +67,9 @@
     padding-left: 24px;
     padding-bottom: 20px;
   }
+}
+
+.mixitup-control-active {
+  color: $background;
+  background-color: $accent;
 }
