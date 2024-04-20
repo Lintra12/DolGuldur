@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DolGuldur Web Studio | Works page</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -21,12 +27,12 @@
         </a>
         <ul class="menu__list">
           <li class="menu__item">
-            <span class="menu__link current">
+            <span class="menu__link">
               Home
             </span>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
+            <a class="menu__link  current" href="#">
               Our Works
             </a>
           </li>
@@ -69,53 +75,69 @@
           </li>
         </ul>
         <ul class="works__content">
-          <li class="works__item">
+          <li class="works__item mix category-a">
             <img class="works__image" src="images/works/1.jpg" width="370" height="294" alt="Sofa World">
             <div class="works__wrapper">
               <h3 class="works__title">Sofa World</h3>
               <p class="works__filter">Web-site</p>
             </div>
           </li>
-          <li class="works__item">
+          <li class="works__item mix category-d">
             <img class="works__image" src="images/works/2.jpg" width="370" height="294" alt="Moby Dick Caffe">
-            <h3 class="works__title">Moby Dick Caffe</h3>
-            <p class="works__filter">Brand</p>
+            <div class="works__wrapper">
+              <h3 class="works__title">Moby Dick Caffe</h3>
+              <p class="works__filter">Brand</p>
+            </div>
           </li>
-          <li class="works__item">
+          <li class="works__item mix category-b">
             <img class="works__image" src="images/works/3.jpg" width="370" height="294" alt="Tesla charger-map">
-            <h3 class="works__title">Tesla charger-map</h3>
-            <p class="works__filter">App</p>
+            <div class="works__wrapper">
+              <h3 class="works__title">Tesla charger-map</h3>
+              <p class="works__filter">App</p>
+            </div>
           </li>
-          <li class="works__item">
+          <li class="works__item mix category-c">
             <img class="works__image" src="images/works/4.jpg" width="370" height="294" alt="Bronze Sky">
-            <h3 class="works__title">Bronze Sky</h3>
-            <p class="works__filter">Design</p>
+            <div class="works__wrapper">
+              <h3 class="works__title">Bronze Sky</h3>
+              <p class="works__filter">Design</p>
+            </div>
           </li>
-          <li class="works__item">
+          <li class="works__item mix category-c">
             <img class="works__image" src="images/works/5.jpg" width="370" height="294" alt="Cereal Travel Magazine">
-            <h3 class="works__title">Cereal Travel Magazine</h3>
-            <p class="works__filter">Design</p>
+            <div class="works__wrapper">
+              <h3 class="works__title">Cereal Travel Magazine</h3>
+              <p class="works__filter">Design</p>
+            </div>
           </li>
-          <li class="works__item">
+          <li class="works__item mix category-b">
             <img class="works__image" src="images/works/6.jpg" width="370" height="294" alt="Photonium">
-            <h3 class="works__title">Photonium</h3>
-            <p class="works__filter">App</p>
+            <div class="works__wrapper">
+              <h3 class="works__title">Photonium</h3>
+              <p class="works__filter">App</p>
+            </div>
           </li>
-          <li class="works__item">
+          <li class="works__item mix category-d">
             <img class="works__image" src="images/works/7.jpg" width="370" height="294" alt="Keep Exploring">
-            <h3 class="works__title">Keep Exploring</h3>
-            <p class="works__filter">Brand</p>
+            <div class="works__wrapper">
+              <h3 class="works__title">Keep Exploring</h3>
+              <p class="works__filter">Brand</p>
+            </div>
           </li>
-          <li class="works__item">
+          <li class="works__item mix category-c">
             <img class="works__image" src="images/works/8.jpg" width="370" height="294"
               alt="Architectural conceptual projects">
-            <h3 class="works__title">Architectural conceptual projects</h3>
-            <p class="works__filter">Design</p>
+            <div class="works__wrapper">
+              <h3 class="works__title">Architectural conceptual projects</h3>
+              <p class="works__filter">Design</p>
+            </div>
           </li>
-          <li class="works__item">
+          <li class="works__item mix category-a">
             <img class="works__image" src="images/works/9.jpg" width="370" height="294" alt="Le Buzz food service">
-            <h3 class="works__title">Le Buzz food service</h3>
-            <p class="works__filter">Web-site</p>
+            <div class="works__wrapper">
+              <h3 class="works__title">Le Buzz food service</h3>
+              <p class="works__filter">Web-site</p>
+            </div>
           </li>
         </ul>
   </main>
@@ -144,6 +166,7 @@
     </div>
   </footer>
 
+  <script src="js/mixitup.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
