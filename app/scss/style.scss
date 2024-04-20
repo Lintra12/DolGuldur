@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'vars';
 @import 'global';
+@import 'works';
 
 .header {
   border-bottom: 1px solid $border;
@@ -238,5 +239,9 @@
   &__item--footer {
     margin-bottom: 9px;
     font-style: regular;
+  }
+
+  &__location {
+    color: $background;
   }
 }

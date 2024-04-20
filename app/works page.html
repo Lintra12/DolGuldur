@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DolGuldur Web Studio | Works page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container header__container">
+      <nav class="menu">
+        <a class="logo header__logo" href="#">
+          <img class="logo__img" src="images/logo.svg" width="189" height="36" alt="Company`s logo">
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <span class="menu__link current">
+              Home
+            </span>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Our Works
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contact">
+        <li class="contact__item">
+          <a class="contact__link  contact__link--mail" href="mailto:info@dolguldur.com">info@dolguldur.com</a>
+        </li>
+        <li class="contact__item">
+          <a class="contact__link contact__link--phone" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="works section">
+      <div class="container">
+        <ul class="works__list">
+          <li class="works__inner">
+            <button class="works__btn" type="button" data-filter="all">
+              All</button>
+          </li>
+          <li class="works__inner">
+            <button class="works__btn" type="button" data-filter=".category-a">Web-sites</button>
+          </li>
+          <li class="works__inner">
+            <button class="works__btn" type="button" data-filter=".category-b">Apps</button>
+          </li>
+          <li class="works__inner">
+            <button class="works__btn" type="button" data-filter=".category-c">Designes</button>
+          </li>
+          <li class="works__inner">
+            <button class="works__btn" type="button" data-filter=".category-d">Brands</button>
+          </li>
+        </ul>
+        <ul class="works__content">
+          <li class="works__item">
+            <img class="works__image" src="images/works/1.jpg" width="370" height="294" alt="Sofa World">
+            <div class="works__wrapper">
+              <h3 class="works__title">Sofa World</h3>
+              <p class="works__filter">Web-site</p>
+            </div>
+          </li>
+          <li class="works__item">
+            <img class="works__image" src="images/works/2.jpg" width="370" height="294" alt="Moby Dick Caffe">
+            <h3 class="works__title">Moby Dick Caffe</h3>
+            <p class="works__filter">Brand</p>
+          </li>
+          <li class="works__item">
+            <img class="works__image" src="images/works/3.jpg" width="370" height="294" alt="Tesla charger-map">
+            <h3 class="works__title">Tesla charger-map</h3>
+            <p class="works__filter">App</p>
+          </li>
+          <li class="works__item">
+            <img class="works__image" src="images/works/4.jpg" width="370" height="294" alt="Bronze Sky">
+            <h3 class="works__title">Bronze Sky</h3>
+            <p class="works__filter">Design</p>
+          </li>
+          <li class="works__item">
+            <img class="works__image" src="images/works/5.jpg" width="370" height="294" alt="Cereal Travel Magazine">
+            <h3 class="works__title">Cereal Travel Magazine</h3>
+            <p class="works__filter">Design</p>
+          </li>
+          <li class="works__item">
+            <img class="works__image" src="images/works/6.jpg" width="370" height="294" alt="Photonium">
+            <h3 class="works__title">Photonium</h3>
+            <p class="works__filter">App</p>
+          </li>
+          <li class="works__item">
+            <img class="works__image" src="images/works/7.jpg" width="370" height="294" alt="Keep Exploring">
+            <h3 class="works__title">Keep Exploring</h3>
+            <p class="works__filter">Brand</p>
+          </li>
+          <li class="works__item">
+            <img class="works__image" src="images/works/8.jpg" width="370" height="294"
+              alt="Architectural conceptual projects">
+            <h3 class="works__title">Architectural conceptual projects</h3>
+            <p class="works__filter">Design</p>
+          </li>
+          <li class="works__item">
+            <img class="works__image" src="images/works/9.jpg" width="370" height="294" alt="Le Buzz food service">
+            <h3 class="works__title">Le Buzz food service</h3>
+            <p class="works__filter">Web-site</p>
+          </li>
+        </ul>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__contact">
+        <a class="logo footer__logo" href="#">
+          <img class="logo__img" src="images/logofooter.svg" width="140" height="25" alt="Логотип">
+        </a>
+        <address class="contact__info">
+          <ul class="contacts">
+            <li class="contact__item contact__item--footer">
+              <p class="contact__location">
+                14 Green St., Belmont, Boston. USA
+              </p>
+            </li>
+            <li class="contact__item contact__item--footer">
+              <a class="contact__link--color" href="mailto:info@dolguldur.com">info@dolguldur.com></a>
+            </li>
+            <li class="contact__item contact__item--footer">
+              <a class="contact__link--color" href="tel:+380961111111">+38 096 111 11 11></a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
