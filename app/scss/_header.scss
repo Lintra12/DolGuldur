@@ -65,7 +65,7 @@
       display: block;
       background-repeat: no-repeat;
       background-position: center;
-      background-size: center;
+      background-size: contain;
       width: 16px;
       height: 16px;
       margin-right: 10px;
@@ -77,18 +77,14 @@
         background-image: url('../images/icons/envelope.svg');
       }
     }
-
+    
     &--phone {
-
+      
       &::before {
         background-image: url('../images/icons/smartphone.svg');
       }
     }
-
-    &:hover {
-      color: $accent;
-    }
-
+       
     &--color {
       color: $text-marker;
     }
