@@ -1,9 +1,9 @@
 @import 'reset';
 @import 'vars';
 @import 'global';
-@import 'header';
-@import 'works';
-@import 'footer';
+@import 'components/header';
+@import 'components/footer';
+@import 'pages/works';
 
 .hero {
   padding: 200px 0;
@@ -100,6 +100,10 @@
     box-shadow: 2px 3px 3px 0 $shadow;
     border-radius: 4px;
 
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -108,7 +112,7 @@
       background-color: $background;
       width: 270px;
       height: 374px;
-    }
+    }  
   }
 
   &__img {
