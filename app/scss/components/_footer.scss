@@ -2,12 +2,27 @@
   background-color: $header;
   padding: 60px 0;
 
+  &__container {
+    display: flex;
+  }
+
   &__contact {
     display: inline-block;
+    margin-right: 30px;
   }
 
   &__logo {
     margin-bottom: 23px;
+  }
+
+  &__join {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    color: $background;
   }
 }
 

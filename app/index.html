@@ -19,11 +19,16 @@
 </head>
 
 <body class="body">
+  <svg display="none">
+    <symbol id="icon-envelope" viewBox="0 0 43 32">
+
+    </symbol>
+  </svg>
   <header class="header">
     <div class="container header__container">
       <nav class="menu">
         <a class="logo header__logo" href="#">
-          <img class="logo__img" src="images/logo.svg" width="189" height="36" alt="Company`s logo">
+          <img class="logo__img" src="images/icons/logo.svg" width="189" height="36" alt="Company`s logo">
         </a>
         <ul class="menu__list">
           <li class="menu__item">
@@ -57,7 +62,7 @@
     <h1 class="visually-hidden">
       DolGuldur Web Studio
     </h1>
-    <section class="hero section">
+    <section class="hero section" style="background-image: url('images/image-bg.jpg')">
       <div class="container">
         <div class="hero__content">
           <p class="hero__text">
@@ -73,25 +78,25 @@
           Skills
         </h2>
         <ul class="skills__inner">
-          <li class="skills__item">
+          <li class="skills__item skills__item--hands">
             <h3 class="skills__title">Effective team</h3>
             <p class="skills__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
             </p>
           </li>
-          <li class="skills__item">
+          <li class="skills__item skills__item--phone">
             <h3 class="skills__title">punctuality</h3>
             <p class="skills__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
             </p>
           </li>
-          <li class="skills__item">
+          <li class="skills__item skills__item--man">
             <h3 class="skills__title">planning</h3>
             <p class="skills__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
             </p>
           </li>
-          <li class="skills__item">
+          <li class="skills__item skills__item--table">
             <h3 class="skills__title">innovation</h3>
             <p class="skills__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
@@ -131,31 +136,165 @@
             <img class="team__img" src="images/1.jpg" width="270" height="260" alt="photo of Paul Castanie">
             <h3 class="team__name">Paul Castanie</h3>
             <p class="team__position">Product Designer</p>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/instagram.svg')" width="20" height="20" >
+                  <span class="visually-hidden">following instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/twitter.svg')" width="20" height="20">
+                  <span class="visually-hidden">following twitter</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/facebook.svg')" width="20" height="20">
+                  <span class="visually-hidden">following facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/linkedin.svg')" width="20" height="20">
+                  <span class="visually-hidden">following linkedin</span>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="team__item">
             <img class="team__img" src="images/2.jpg" width="270" height="260" alt="photo of Joanna Nix">
             <h3 class="team__name">Joanna Nix</h3>
             <p class="team__position">Frontend Developer</p>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/instagram.svg')" width="20" height="20">
+                  <span class="visually-hidden">following instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/twitter.svg')" width="20" height="20">
+                  <span class="visually-hidden">following twitter</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/facebook.svg')" width="20" height="20">
+                  <span class="visually-hidden">following facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/linkedin.svg')" width="20" height="20">
+                  <span class="visually-hidden">following linkedin</span>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="team__item">
             <img class="team__img" src="images/3.jpg" width="270" height="260" alt="photo of Aldo Delara">
             <h3 class="team__name">Aldo Delara</h3>
             <p class="team__position">Marketing</p>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/instagram.svg')" width="20" height="20">
+                  <span class="visually-hidden">following instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/twitter.svg')" width="20" height="20">
+                  <span class="visually-hidden">following twitter</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/facebook.svg')" width="20" height="20">
+                  <span class="visually-hidden">following facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/linkedin.svg')" width="20" height="20">
+                  <span class="visually-hidden">following linkedin</span>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="team__item">
             <img class="team__img" src="images/4.jpg" width="270" height="260" alt="photo of Oladimeji Odunsi">
             <h3 class="team__name">Oladimeji Odunsi</h3>
             <p class="team__position">UI Designer</p>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/instagram.svg')" width="20" height="20">
+                  <span class="visually-hidden">following instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/twitter.svg')" width="20" height="20">
+                  <span class="visually-hidden">following twitter</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/facebook.svg')" width="20" height="20">
+                  <span class="visually-hidden">following facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" style="background-image: url('images/icons/linkedin.svg')" width="20" height="20">
+                  <span class="visually-hidden">following linkedin</span>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
     </section>
+    <section class="parnters section">
+      <div class="container">
+        <h2 class="title">
+          Our partners
+        </h2>
+        <ul class="partners__inner">
+          <li class="partners__item">
+            <a class="partners__link" href="#" 
+              style="background-image: url('images/partners/rails.svg')" width="60" height="60">
+              <span class="visually-hidden">following rails</span>
+              </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#" 
+              style="background-image: url('images/partners/googlepay.svg')" width="60" height="60">
+              <span class="visually-hidden">following googlepay</span>
+              </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#" 
+              style="background-image: url('images/partners/playstation.svg')" width="60" height="60">
+              <span class="visually-hidden">following playstation</span>
+              </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#" 
+              style="background-image: url('images/partners/applepay.svg')" width="60" height="60">
+              <span class="visually-hidden">following applepay</span>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a href="" class="partners__link" href="#" 
+              style="background-image: url('images/partners/npm.svg')" width="60" height="60">
+              <span class="visually-hidden">npm rails</span>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a  class="partners__link" href="#"
+              style="background-image: url('images/partners/ubereats.svg')" width="60" height="60">
+                <span class="visually-hidden">following ubereats</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__container">
       <div class="footer__contact">
         <a class="logo footer__logo" href="#">
-          <img class="logo__img" src="images/logofooter.svg" width="140" height="25" alt="Логотип">
+          <img class="logo__img" src="images/icons/logofooter.svg" width="140" height="25" alt="Логотип">
         </a>
         <address class="contact__info">
           <ul class="contacts">
@@ -172,6 +311,33 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="footer__join">
+        <p class="footer__text">
+          join
+        </p>
+        <ul class="social social--footer">
+          <li class="social__item">
+            <a class="social__link" href="#" style="background-image: url('images/icons/instagram.svg')" width="20" height="20">
+              <span class="visually-hidden">following instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" style="background-image: url('images/icons/twitter.svg')" width="20" height="20">
+              <span class="visually-hidden">following twitter</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" style="background-image: url('images/icons/facebook.svg')" width="20" height="20">
+              <span class="visually-hidden">following facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" style="background-image: url('images/icons/linkedin.svg')" width="20" height="20">
+              <span class="visually-hidden">following linkedin</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
