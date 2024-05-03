@@ -48,45 +48,12 @@
   display: flex;
 
   &__item {
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
     &:first-child {
       margin-right: 45px;
     }
-  }
-
-  &__link {
-    display: flex;
-    align-items: center;
-    transition: color 0.3s;
-
-    &::before {
-      content: '';
-      display: block;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      width: 16px;
-      height: 16px;
-      margin-right: 10px;
-    }
-
-    &--mail {
-
-      &::before {
-        background-image: url('../images/icons/envelope.svg');
-      }
-    }
-    
-    &--phone {
-      
-      &::before {
-        background-image: url('../images/icons/smartphone.svg');
-      }
-    }
-       
-    &--color {
-      color: $text-marker;
-    }
-  }
+  } 
 }

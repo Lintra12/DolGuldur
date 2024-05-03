@@ -129,6 +129,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+    gap: 30px;
   }
 
   &__item {
@@ -137,10 +138,6 @@
     z-index: 1;
     box-shadow: 2px 3px 3px 0 $shadow;
     border-radius: 4px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
 
     &::before {
       content: '';
