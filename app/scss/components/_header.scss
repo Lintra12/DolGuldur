@@ -51,9 +51,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
-
+    
     &:first-child {
       margin-right: 45px;
     }
   } 
+}
+
+.icon--header {
+  fill: $default;
 }

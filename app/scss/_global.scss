@@ -69,20 +69,19 @@ body {
   }
   
   &__link {
-    color: $default;
+    fill: $default;
     width: 44px;
     height: 44px;
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &--footer {
     background-color: $header;
-    padding-bottom: 0;
-    justify-content: center;
-    color: $background;
   }
+}
+
+.icon--footer {
+  fill: $background; 
 }
