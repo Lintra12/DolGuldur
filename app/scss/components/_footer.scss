@@ -8,6 +8,7 @@
 
   &__contact {
     display: inline-block;
+    align-items: baseline;
     margin-right: 30px;
   }
 
@@ -18,11 +19,13 @@
   &__join {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
   }
-
+  
   &__text {
     text-transform: uppercase;
     color: $background;
+    margin-bottom: 20px;
   }
 }
 

@@ -115,26 +115,15 @@
     gap: 30px;
   }
 
-  &__item {
-    position: relative;
+  &__item {  
     width: 270px;
-    z-index: 1;
     box-shadow: 2px 3px 3px 0 $shadow;
     border-radius: 4px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      display: block;
-      background-color: $background;
-      width: 270px;
-      height: 374px;
-    }
+    background-color: $background;
   }
 
-  &__img {
-    margin-bottom: 30px;
+  &__info {
+    padding: 30px;
   }
 
   &__name {
@@ -150,18 +139,13 @@
 
 .partners {
 
-  &__inner {
+  &__list {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   &__item {
-    width: 170px;
-    height: 92px;
-    border: 1px solid $default;
-    border-radius: 4px;
-  
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -172,8 +156,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 15px auto;
-    width: 60px;
-    height: 60px;
+    border: 1px solid $default;
+    border-radius: 4px;
+    padding: 16px 55px;
+    max-width: 170px;
+    max-height: 92px;
   }
+
+  &__icon {
+    fill: $default;
+  }
+  
 }

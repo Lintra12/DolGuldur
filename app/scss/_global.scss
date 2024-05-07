@@ -53,35 +53,8 @@ body {
   display: block;
 }
 
-.social {
-  display: flex;
-  justify-content: center;
-  background-color: $background;
-  padding-bottom: 30px;
-  
-  &__item {
-    border-radius: 50%;
-    background-color: $woverlay;
-    
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-  }
-  
-  &__link {
-    fill: $default;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@import 'components/social';
 
-  &--footer {
-    background-color: $header;
-  }
-}
-
-.icon--footer {
-  fill: $background; 
+.icon {
+  fill: currentColor;
 }
