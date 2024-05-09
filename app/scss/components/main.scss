@@ -24,9 +24,8 @@
     position: absolute;
     z-index: 2;
     left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    align-items: center;
+    padding-top: 200px;
+    transform: translate(-50%);
     text-align: center;
   }
 
@@ -148,30 +147,43 @@
 
   &__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   &__item {
+      
     &:not(:last-child) {
       margin-right: 30px;
     }
   }
-
+  
   &__link {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: grid;
+    place-items: center;
     border: 1px solid $default;
     border-radius: 4px;
-    padding: 16px 55px;
-    max-width: 170px;
-    max-height: 92px;
-  }
+    width: 170px;
+    height: 92px;
 
+    .icon--finger {
+      display: none;
+    }
+
+    &:hover {
+      border: 1px solid $accent;
+      fill: $accent;
+
+      .icon--finger {
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 5px;
+        bottom: 5px;
+        fill: $header;
+      }
+    }  
+  }  
   &__icon {
     fill: $default;
   }
-  
 }
