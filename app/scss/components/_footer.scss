@@ -14,7 +14,7 @@
 
   &__logo {
     margin-bottom: 23px;
-  }
+  }  
 
   &__join {
     display: flex;
@@ -44,5 +44,41 @@
 
   &__link--color {
     color: $text-marker;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius:  4px;
+    padding: 0 3px;
+    transition: color 0.3s, border-color 0.3s, display 0.3s;
+
+    .icon--finger {
+      display: none;
+    }
+
+    &:hover {
+      color: $accent;
+      
+      .icon--header {
+        transition: fill 0.3s;
+        fill: $accent;
+      }
+
+      .icon--finger {
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 0;
+        bottom: -6px;
+        fill: $background;
+      }
+    }
+
+    &:focus {
+      border-color: $accent;
+    }
+
+    &:active {
+      color: $textmarker-op;
+    }
   }
 }

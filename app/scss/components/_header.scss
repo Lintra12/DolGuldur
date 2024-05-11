@@ -26,6 +26,7 @@
   }
 
   &__link {
+    position: relative;
     font-size: 16px;
     padding: 22px 4px;
     display: inline-block;
@@ -34,9 +35,23 @@
     border: 1px solid transparent;
     transition: color 0.3s, border-bottom 0.3s, border-color 0.3s;
 
+    .icon--finger {
+      display: none;
+    }
+
     &:hover {
       color: $accent;
       border-bottom: 4px solid $accent;
+
+      .icon--finger {
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 5px;
+        bottom: 5px;
+        fill: $header;
+      }
     }
 
     &:focus {
@@ -67,13 +82,18 @@
   }
   
   &__link {
+    position: relative;
     display: flex;
     align-items: center;
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 0 3px;
     gap: 10px;
-    transition: color 0.3s, border-color 0.3s;
+    transition: color 0.3s, border-color 0.3s, display 0.3s;
+
+    .icon--finger {
+      display: none;
+    }
 
     &:hover {
       color: $accent;
@@ -81,6 +101,17 @@
       .icon--header {
         transition: fill 0.3s;
         fill: $accent;
+      }
+
+      .icon--finger {
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        transform: translateX(-50%);
+        right: 50%;
+        bottom: -15px;
+        fill: $header;
       }
     }
 

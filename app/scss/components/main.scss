@@ -157,12 +157,14 @@
   }
   
   &__link {
+    position: relative;
     display: grid;
     place-items: center;
     border: 1px solid $default;
     border-radius: 4px;
     width: 170px;
     height: 92px;
+    transition: border 0.3s, display 0.3s, fill 0.3s, outline 0.3s;
 
     .icon--finger {
       display: none;
@@ -170,8 +172,7 @@
 
     &:hover {
       border: 1px solid $accent;
-      fill: $accent;
-
+      
       .icon--finger {
         display: block;
         position: absolute;
@@ -181,8 +182,26 @@
         bottom: 5px;
         fill: $header;
       }
-    }  
-  }  
+
+      .partners__icon {
+        fill: $accent;
+      }
+    } 
+    
+    &:focus {
+      outline-offset: 4px;
+      outline: 1px solid $accent;
+    }
+
+    &:active {
+      border: 1px solid $accent-op;
+
+      .partners__icon {
+        fill: $accent-op;
+      }
+    }
+  }
+    
   &__icon {
     fill: $default;
   }
