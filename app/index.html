@@ -88,11 +88,20 @@
           <p class="hero__text">
             author's forge where your sites are created
           </p>
-          <button class="button" type="button">Go to order
+          <button class="button data-modal-open" type="button">Go to order
             <svg class="icon icon--finger" width="16" height="16">
               <use href="images/symbol-defs.svg#icon-finger"></use>
             </svg>
           </button>
+          <div class="modal data-modal visually-hidden">
+            <div class="modal__item">
+              <button class="modal__button data-modal-close" type="button">
+              <svg class="icon--close" width="40" height="40">
+                <use href="images/symbol-defs.svg#icon--close"></use>
+              </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="hero__autoplay">

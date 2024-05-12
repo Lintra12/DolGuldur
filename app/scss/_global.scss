@@ -87,3 +87,34 @@ body {
 .icon {
   fill: currentColor;
 }
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $header-op;
+  display: flex;
+
+  &__item {
+    position: relative;
+    width: 528px;
+    height: 581px;
+    background-color: $background;
+    margin: auto;
+    box-shadow: 0 4px 4px 0 $header-op;
+  }
+  
+  &__button {
+    position: absolute;
+    width: 40px;
+    height: 40px; 
+    top: 10px;
+    right: 10px;
+    outline: 1px solid $header-border;
+    border-radius: 50%;
+  }
+}
