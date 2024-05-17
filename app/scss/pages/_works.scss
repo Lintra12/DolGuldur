@@ -33,55 +33,41 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
   }
+
+  &__info {
+    position: relative;
+    overflow: hidden;
+  }
   
-  &__lorem {
+  &__text {
     position: absolute;
     left: 0;
-    right: 0;
-    top: 100%;
+    top: 0;
     width: 100%;
-    height: 0;
+    height: 100%;
     text-align: left;
     color: $background;
     font-size: 18px;
+    line-height: 1.5;
     background-color: $accent-overlay;
-    bottom: 0;
-    padding: 65px 25px;
-    opacity: 0;
-    transition: top 0.3s;
+    transform: translateY(100%);
+    padding: 63px 24px;
+    transition: transform 0.6s;
   }
   
   &__item {
     width: 370px;
     position: relative;
     transition: box-shadow 0.3s;
-
-    .icon--finger {
-      display: none;
-    }
     
     &:hover {
       box-shadow: 0 4px 4px 0 $header-op;
 
-      .works__lorem {
-        opacity: 1;
-        height: 294px;
-        top: 0;
-        
-
-      }
-
-      .icon--finger {
-        display: block;
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        right: 40%;
-        bottom: 10%;
-        transform: translate(-50%, -50%);
+      .works__text {
+        transform: translateY(0);
       }
     }
-    }
+  }
 
   &__wrapper {
     width: 100%;

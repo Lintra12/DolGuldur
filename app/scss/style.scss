@@ -1,8 +1,8 @@
 @import 'reset';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
 @import 'vars';
 @import 'global';
 @import 'components/header';
 @import 'components/footer';
-@import 'components/main';
+@import 'pages/main';
 @import 'pages/works';
-@import '../../node_modules/slick-carousel/slick/slick.scss'
