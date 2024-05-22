@@ -85,6 +85,50 @@
             <use href="images/symbol-defs.svg#icon--close"></use>
           </svg>
           </button>
+          <form class="form form-modal" action="#">
+          <p class="form__text">
+            Tell about yourself and we will contact you
+          </p>
+              <label class="form__label--modal">
+                Name
+                <input class="form__input--modal" type="text" name="name" placeholder="" required>
+                <svg class="icon-modal" width="18" height="18">
+                  <use href="images/symbol-defs.svg#icon-name"></use>
+                </svg>
+              </label>
+              <label class="form__label--modal">
+                Phone
+                <input class="form__input--modal" type="tel" name="tel" placeholder="" required>
+                <svg class="icon-modal" width="18" height="18">
+                  <use href="images/symbol-defs.svg#icon-miniphone"></use>
+                </svg>
+              </label>
+              <label class="form__label--modal">
+                E-mail
+                <input class="form__input--modal" type="email" name="email" placeholder="" required>
+                <svg class="icon-modal" width="18" height="18">
+                  <use href="images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </label>
+            <label class="form__label--modal form__label--modal-message">
+              Message
+              <textarea class="form__input--modal" name="message" placeholder="Your message..."
+                required></textarea>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__true" type="checkbox" name="checkbox" required>
+              <span class="checkbox__span">
+                <svg class="checkbox__icon" width="16" height="16">
+                  <use href="images/symbol-defs.svg#icon-checkbox"></use>
+                </svg>
+                I agree to the subscription and accept the
+                <a class="checkbox__link" href="#" >
+                  Terms of use
+                </a>
+              </span>
+            </label>
+            <button class="button button-send" type="submit">Submit</button>
+          </form>
         </div>
       </div>
       <div class="hero__autoplay">
@@ -421,11 +465,11 @@
               </p>
             </li>
             <li class="contact__item contact__item--footer">
-              <a class="contact__link--color" href="mailto:info@dolguldur.com">info@dolguldur.com>
+              <a class="contact__link--color" href="mailto:info@dolguldur.com">info@dolguldur.com
               </a>
             </li>
             <li class="contact__item contact__item--footer">
-              <a class="contact__link--color" href="tel:+380961111111">+38 096 111 11 11>
+              <a class="contact__link--color" href="tel:+380961111111">+38 096 111 11 11
               </a>
             </li>
           </ul>
@@ -469,6 +513,21 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="footer__subscribe">
+        <h3 class="footer__text">
+          subscribe
+        </h3>
+        <form  class="form form" action="#">
+          <label class="form__label">
+            <input class="form__input" type="email" name="email" placeholder="E-mail" required>
+          </label>
+          <button class="button button__footer" type="submit">Subscribe
+            <svg class="icon-leaf" width="24" height="24">
+              <use href="images/symbol-defs.svg#icon-leaf"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </footer>
