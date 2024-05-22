@@ -56,14 +56,14 @@
     pointer-events: all;
     transition: opacity 1s;
 
-    // &.is-hidden {
-    //   opacity: 0;
-    //   pointer-events: none;
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
 
-    //   .modal {
-    //     transform: scale(0);
-    //   }
-    // }
+      .modal {
+        transform: scale(0);
+      }
+    }
   }
 }
 
@@ -145,6 +145,7 @@
       position: absolute;
       top: 31px;
       left: 10px;
+      fill: $title;
     }
   }
 
@@ -154,10 +155,38 @@
     border: 1px solid $title-op;
     border-radius: 4px;
     height: 40px;
+    padding-left: 30px;
+
+    &:hover {
+
+      .icon-modal {
+        fill: $accent-op;
+      } 
+    }
+
+    &:focus {
+      border-color: $accent;
+
+      .icon-modal {
+        fill: $accent;
+        }
+      }
+    }
   }
 
   .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     margin-bottom: 25px;
+
+    &:hover {
+
+      .checkbox__custom {
+        background-color: $accent;
+        border: 1px solid transparent;
+      }
+    }
 
     &__true {
       opacity: 0;
@@ -165,32 +194,44 @@
       position: absolute;
     }
 
-    &__span {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    &__icon {
+    &__custom {
+      position: relative;
       fill: $background;
+      width: 16px;
+      height: 16px;
       border: 1px solid $header;
       border-radius: 2px;
       cursor: pointer;
     }
 
+    &__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: auto;
+    }
+
     &__link {
       color: $accent;
       text-decoration: underline;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      transition: color 0.3s, border-color 0.3s;
+
+      &:hover {
+        color: $accent-op
+      }
+
+      &:focus {
+        border-color: $accent;
+      }
     }
   }
 
   .button-send {
     padding: 10px 70px;
   }
-}
-
-
-
 
 .skills {
 
