@@ -42,27 +42,27 @@
   &__img {
     object-fit: cover;
   }
+}
 
-  .backdrop {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: $header-op;
-    display: flex;
-    opacity: 1;
-    pointer-events: all;
-    transition: opacity 1s;
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $header-op;
+  display: flex;
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 1s;
 
-    &.is-hidden {
-      opacity: 0;
-      pointer-events: none;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 
-      .modal {
-        transform: scale(0);
-      }
+    .modal {
+      transform: scale(0);
     }
   }
 }
@@ -71,10 +71,10 @@
   position: relative;
   max-width: 528px;
   width: 100%;
-  height: 581px;
   background-color: $background;
   margin: auto;
   border-radius: 6px;
+  padding: 40px;
   box-shadow: 0 4px 4px 0 $header-op;
   transform: scale(1);
   transition: transform 0.5s;
@@ -104,134 +104,128 @@
   }
 }
 
-.form-modal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-}
+.feedback {
+  text-align: center;
+  max-width: 448px;
+  width: 100%;
 
-.form {
   &__text {
     font-size: 20px;
     color: $title;
-    padding-bottom: 11px;
+    margin-bottom: 11px;
   }
 
-  &__label--modal {
+  &__label {
     position: relative;
-    height: 58px;
+    display: block;
+    text-align: left;
+    width: 100%;
     margin-bottom: 10px;
     font-size: 12px;
-
-    &-message {
-      height: 138px;
-      height: 100%;
-      margin-bottom: 20px;
-
-      .form__input--modal {
-        resize: none;
-        height: 120px;
-        padding: 12px 16px;
-
-        &::placeholder {
-          font-size: 14px;
-          color: $default-op;
-        }
-      }
-    }
-
-    .icon-modal {
-      position: absolute;
-      top: 31px;
-      left: 10px;
-      fill: $title;
-    }
   }
 
-  &__input--modal {
+  &__icon {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    fill: $title;
+    transition: fill 0.3s;
+  }
+
+  &__input {
     display: block;
-    width: 448px;
     border: 1px solid $title-op;
+    font-size: 14px;
+    width: 100%;
     border-radius: 4px;
-    height: 40px;
-    padding-left: 30px;
+    padding: 8px 16px 8px 38px;
+
+    &--textarea {
+      padding-left: 16px;
+      height: 120px;
+    }
+
+    &::placeholder {
+      color: $default-op;
+    }
 
     &:hover {
 
-      .icon-modal {
+      &+.feedback__icon {
         fill: $accent-op;
-      } 
+      }
     }
 
     &:focus {
       border-color: $accent;
 
-      .icon-modal {
+      &+.feedback__icon {
         fill: $accent;
-        }
       }
     }
   }
 
-  .checkbox {
-    display: flex;
+  &__checkbox {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+
+    &:checked {
+
+      &+.feedback__fake-checkbox {
+        background-color: $accent;
+        border-color: transparent;
+      }
+    }
+
+    &:focus {
+
+      &+.feedback__fake-checkbox {
+        outline-offset: 2px;
+        outline: 1px solid $accent;
+      }
+    }
+  }
+
+  &__fake-checkbox {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
-    margin-bottom: 25px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $header;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 7px;
+    margin-bottom: 30px;
+    transition: outline 0.3s, background-color 0.3s, border-color 0.3s;
+  }
+
+  &__checkbox-icon {
+    fill: $background;
+  }
+
+  &__link {
+    color: $accent;
+    text-decoration: underline;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: opacity 0.3s, border-color 0.3s;
 
     &:hover {
-
-      .checkbox__custom {
-        background-color: $accent;
-        border: 1px solid transparent;
-      }
+      opacity: 0.7;
     }
 
-    &__true {
-      opacity: 0;
-      pointer-events: none;
-      position: absolute;
-    }
-
-    &__custom {
-      position: relative;
-      fill: $background;
-      width: 16px;
-      height: 16px;
-      border: 1px solid $header;
-      border-radius: 2px;
-      cursor: pointer;
-    }
-
-    &__icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: auto;
-    }
-
-    &__link {
-      color: $accent;
-      text-decoration: underline;
-      border: 1px solid transparent;
-      border-radius: 2px;
-      transition: color 0.3s, border-color 0.3s;
-
-      &:hover {
-        color: $accent-op
-      }
-
-      &:focus {
-        border-color: $accent;
-      }
+    &:focus {
+      border-color: $accent;
     }
   }
 
-  .button-send {
+  .button {
     padding: 10px 70px;
   }
+}
 
 .skills {
 
@@ -357,7 +351,7 @@
     justify-content: center;
     align-items: center;
     color: $default;
-    transition: color 0.3s, outline 0.3s;
+    transition: opacity 0.3s, outline 0.3s;
 
     &:hover {
       color: $accent;
@@ -369,7 +363,7 @@
     }
 
     &:active {
-      color: $accent-op;
+      opacity: 0.7;
     }
   }
 }
