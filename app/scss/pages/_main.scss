@@ -151,12 +151,12 @@
     }
 
     &::placeholder {
-      color: $default-op;
+      fill: $default-op;
     }
 
     &:hover {
 
-      &+.feedback__icon {
+      & + .feedback-form__icon {
         fill: $accent-op;
       }
     }
@@ -164,7 +164,7 @@
     &:focus {
       border-color: $accent;
 
-      &+.feedback__icon {
+      & + .feedback-form__icon {
         fill: $accent;
       }
     }
@@ -177,7 +177,7 @@
 
     &:checked {
 
-      &+.feedback__fake-checkbox {
+      & + .feedback-form__fake-checkbox {
         background-color: $accent;
         border-color: transparent;
       }
@@ -185,7 +185,7 @@
 
     &:focus {
 
-      &+.feedback__fake-checkbox {
+      & + .feedback-form__fake-checkbox {
         outline-offset: 2px;
         outline: 1px solid $accent;
       }
