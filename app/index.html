@@ -81,45 +81,45 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
 
-          <form class="feedback" action="#">
-            <h2 class="feedback__text">
+          <form class="feedback-form" action="#">
+            <h2 class="feedback-form__title">
               Tell about yourself and we will contact you
             </h2>
-            <label class="feedback__label">
+            <label class="feedback-form__label">
               Name
-              <input class="feedback__input" type="text" name="name" placeholder="" required>
-              <svg class="feedback__icon" width="18" height="18">
+              <input class="feedback-form__input" type="text" name="name" placeholder="" required>
+              <svg class="feedback-form__icon" width="18" height="18">
                 <use href="images/symbol-defs.svg#icon-name"></use>
               </svg>
             </label>
-            <label class="feedback__label">
+            <label class="feedback-form__label">
               Phone
-              <input class="feedback__input" type="tel" name="tel" placeholder="" required>
-              <svg class="feedback__icon" width="18" height="18">
+              <input class="feedback-form__input" type="tel" name="tel" placeholder="" required>
+              <svg class="feedback-form__icon" width="18" height="18">
                 <use href="images/symbol-defs.svg#icon-miniphone"></use>
               </svg>
             </label>
-            <label class="feedback__label">
+            <label class="feedback-form__label">
               E-mail
-              <input class="feedback__input" type="email" name="email" placeholder="" required>
-              <svg class="feedback__icon" width="18" height="18">
+              <input class="feedback-form__input" type="email" name="email" placeholder="" required>
+              <svg class="feedback-form__icon" width="18" height="18">
                 <use href="images/symbol-defs.svg#icon-email"></use>
               </svg>
             </label>
-            <label class="feedback__label">
+            <label class="feedback-form__label">
               Message
-              <textarea class="feedback__input feedback__input--textarea" name="message" placeholder="Your message..."
+              <textarea class="feedback-form__input feedback-form__input--textarea" name="message" placeholder="Your message..."
                 required></textarea>
             </label>
-            <label class="feedback__label">
-              <input class="feedback__checkbox" type="checkbox" name="checkbox" required>
-              <div class="feedback__fake-checkbox">
-                <svg class="feedback__checkbox-icon" width="16" height="16">
+            <label class="feedback-form__label feedback-form__label-agreement">
+              <input class="feedback-form__checkbox" type="checkbox" name="checkbox" required>
+              <div class="feedback-form__fake-checkbox">
+                <svg class="feedback-form__checkbox-icon" width="16" height="16">
                   <use href="images/symbol-defs.svg#icon-checkbox"></use>
                 </svg>
               </div>
               I agree to the subscription and accept the
-              <a class="feedback__link" href="#">
+              <a class="feedback-form__link" href="#">
                 Terms of use
               </a>
             </label>
@@ -460,17 +460,17 @@
         </a>
         <address class="footer__info">
           <ul class="footer__list">
-            <li class="footer__contact--item">
+            <li class="footer__item">
               <p class="footer__location">
                 14 Green St., Belmont, Boston. USA
               </p>
             </li>
-            <li class="footer__contact--item">
-              <a class="footer__link--color" href="mailto:info@dolguldur.com">info@dolguldur.com
+            <li class="footer__item">
+              <a class="footer__link-color" href="mailto:info@dolguldur.com">info@dolguldur.com
               </a>
             </li>
-            <li class="footer__contact--item">
-              <a class="footer__link--color" href="tel:+380961111111">+38 096 111 11 11
+            <li class="footer__item">
+              <a class="footer__link-color" href="tel:+380961111111">+38 096 111 11 11
               </a>
             </li>
           </ul>
@@ -519,9 +519,9 @@
         <h3 class="footer__text">
           subscribe
         </h3>
-        <form class="form" action="#">
-          <label class="form__label">
-            <input class="form__input" type="email" name="email" placeholder="E-mail" required>
+        <form class="subscribe-form" action="#">
+          <label class="subscribe-form__label">
+            <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail" required>
           </label>
           <button class="button button--big" type="submit">
             Subscribe

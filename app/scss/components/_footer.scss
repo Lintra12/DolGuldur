@@ -32,7 +32,7 @@
     margin-bottom: 20px;
   }
 
-  &__contact--item {
+  &__item {
     margin-bottom: 9px;
     font-style: regular;
   }
@@ -41,13 +41,13 @@
     color: $background;
   }
 
-  &__link--color {
+  &__link-color {
     color: $text-marker;
     position: relative;
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 0 3px;
-    transition: opacity 0.3s, border-color 0.3s, display 0.3s;
+    transition: color 0.3s, opacity 0.3s, border-color 0.3s;
 
     &:hover {
       color: $accent;
@@ -73,7 +73,7 @@
   }
 }
 
-.form {
+.subscribe-form {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,6 +98,7 @@
     &::placeholder {
       font-size: 16px;
       line-height: 1.3;
+      transition: color 0.3s;
     }
 
     &:hover::placeholder {
