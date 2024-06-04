@@ -88,6 +88,7 @@ body {
 
 .icon {
   fill: currentColor;
+  transition: fill 0.3s;
 
   &--grey {
     fill: $default;
